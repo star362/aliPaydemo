@@ -1,0 +1,690 @@
+2018-11-02 15:25:58.864  INFO 7995 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Starting DemoApplication on cpe-172-119-50-50.socal.res.rr.com with PID 7995 (/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes started by star in /Users/star/Documents/myworkspace/ideaworkspace/demo)
+2018-11-02 15:25:58.865 DEBUG 7995 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-11-02 15:25:58.866  INFO 7995 --- [restartedMain] com.joruns.test.demo.DemoApplication     : The following profiles are active: local
+2018-11-02 15:25:58.932  INFO 7995 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6cca32b6: startup date [Fri Nov 02 15:25:58 CST 2018]; root of context hierarchy
+2018-11-02 15:26:00.133  INFO 7995 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2018-11-02 15:26:00.151  INFO 7995 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-02 15:26:00.151  INFO 7995 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-11-02 15:26:00.154  INFO 7995 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/star/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-02 15:26:00.205  INFO 7995 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-02 15:26:00.205  INFO 7995 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1273 ms
+2018-11-02 15:26:00.298  INFO 7995 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-02 15:26:00.301  INFO 7995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 15:26:00.302  INFO 7995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 15:26:00.302  INFO 7995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 15:26:00.302  INFO 7995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 15:26:00.396 DEBUG 7995 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1fab59a8
+2018-11-02 15:26:00.548  INFO 7995 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : JedisPool注入成功！
+2018-11-02 15:26:00.548  INFO 7995 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : redis地址：172.0.0.1:6379
+2018-11-02 15:26:00.643  INFO 7995 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:26:00.847  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6cca32b6: startup date [Fri Nov 02 15:25:58 CST 2018]; root of context hierarchy
+2018-11-02 15:26:00.961  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readis/demo]}" onto public com.joruns.test.demo.beans.Town com.joruns.test.demo.controller.ReadisController.test(com.joruns.test.demo.beans.Town)
+2018-11-02 15:26:00.964  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sel]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.selAll()
+2018-11-02 15:26:00.964  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuser]}" onto public int com.joruns.test.demo.controller.UserController.insertuser() throws java.text.ParseException
+2018-11-02 15:26:00.964  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuserlist]}" onto public void com.joruns.test.demo.controller.UserController.insertuserlist()
+2018-11-02 15:26:00.965  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seleuserlisr]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.seleuserlisr()
+2018-11-02 15:26:00.965  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectdoubletable()
+2018-11-02 15:26:00.965  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectsheng]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectsheng()
+2018-11-02 15:26:00.966  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable1]}" onto public java.util.List<com.joruns.test.demo.beans.City> com.joruns.test.demo.controller.UserController.selectdoubletable1()
+2018-11-02 15:26:00.966  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/shangchuan],methods=[POST]}" onto public void com.joruns.test.demo.controller.UserController.shangchuan(org.springframework.web.multipart.MultipartFile)
+2018-11-02 15:26:00.968  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[GET]}" onto public void com.joruns.test.demo.controller.WXdemo.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:26:00.968  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[POST]}" onto public void com.joruns.test.demo.controller.WXdemo.dopost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:26:00.969  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getwechatconfig],methods=[GET]}" onto public com.joruns.test.demo.beans.WeChatJSConfig com.joruns.test.demo.controller.WechatController.weChatConfig(java.lang.String)
+2018-11-02 15:26:00.972  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-02 15:26:00.972  INFO 7995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:26:01.010  INFO 7995 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:26:01.010  INFO 7995 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:26:01.267  INFO 7995 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-11-02 15:26:01.291  INFO 7995 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-02 15:26:01.292  INFO 7995 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-02 15:26:01.296  INFO 7995 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-02 15:26:01.338  INFO 7995 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2018-11-02 15:26:01.343  INFO 7995 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Started DemoApplication in 2.971 seconds (JVM running for 3.946)
+2018-11-02 15:26:52.457  INFO 7995 --- [Thread-15] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6cca32b6: startup date [Fri Nov 02 15:25:58 CST 2018]; root of context hierarchy
+2018-11-02 15:26:52.463  INFO 7995 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-11-02 15:26:52.463  INFO 7995 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-11-02 15:26:54.606  INFO 8001 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Starting DemoApplication on cpe-172-119-50-50.socal.res.rr.com with PID 8001 (/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes started by star in /Users/star/Documents/myworkspace/ideaworkspace/demo)
+2018-11-02 15:26:54.607 DEBUG 8001 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-11-02 15:26:54.609  INFO 8001 --- [restartedMain] com.joruns.test.demo.DemoApplication     : The following profiles are active: local
+2018-11-02 15:26:54.666  INFO 8001 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64b7a517: startup date [Fri Nov 02 15:26:54 CST 2018]; root of context hierarchy
+2018-11-02 15:26:56.030  INFO 8001 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2018-11-02 15:26:56.048  INFO 8001 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-02 15:26:56.049  INFO 8001 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-11-02 15:26:56.051  INFO 8001 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/star/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-02 15:26:56.103  INFO 8001 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-02 15:26:56.103  INFO 8001 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1438 ms
+2018-11-02 15:26:56.193  INFO 8001 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-02 15:26:56.196  INFO 8001 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 15:26:56.197  INFO 8001 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 15:26:56.197  INFO 8001 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 15:26:56.197  INFO 8001 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 15:26:56.285 DEBUG 8001 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@eff50c6
+2018-11-02 15:26:56.425  INFO 8001 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : JedisPool注入成功！
+2018-11-02 15:26:56.425  INFO 8001 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : redis地址：172.0.0.1:6379
+2018-11-02 15:26:56.548  INFO 8001 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:26:56.705  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64b7a517: startup date [Fri Nov 02 15:26:54 CST 2018]; root of context hierarchy
+2018-11-02 15:26:56.819  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readis/demo]}" onto public com.joruns.test.demo.beans.Town com.joruns.test.demo.controller.ReadisController.test(com.joruns.test.demo.beans.Town)
+2018-11-02 15:26:56.822  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sel]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.selAll()
+2018-11-02 15:26:56.822  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuser]}" onto public int com.joruns.test.demo.controller.UserController.insertuser() throws java.text.ParseException
+2018-11-02 15:26:56.822  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuserlist]}" onto public void com.joruns.test.demo.controller.UserController.insertuserlist()
+2018-11-02 15:26:56.823  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seleuserlisr]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.seleuserlisr()
+2018-11-02 15:26:56.823  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectdoubletable()
+2018-11-02 15:26:56.823  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectsheng]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectsheng()
+2018-11-02 15:26:56.824  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable1]}" onto public java.util.List<com.joruns.test.demo.beans.City> com.joruns.test.demo.controller.UserController.selectdoubletable1()
+2018-11-02 15:26:56.824  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/shangchuan],methods=[POST]}" onto public void com.joruns.test.demo.controller.UserController.shangchuan(org.springframework.web.multipart.MultipartFile)
+2018-11-02 15:26:56.826  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[GET]}" onto public void com.joruns.test.demo.controller.WXdemo.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:26:56.826  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[POST]}" onto public void com.joruns.test.demo.controller.WXdemo.dopost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:26:56.826  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getwechatconfig],methods=[GET]}" onto public com.joruns.test.demo.beans.WeChatJSConfig com.joruns.test.demo.controller.WechatController.weChatConfig(java.lang.String)
+2018-11-02 15:26:56.828  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-02 15:26:56.829  INFO 8001 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:26:56.853  INFO 8001 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:26:56.854  INFO 8001 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:26:57.061  INFO 8001 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-11-02 15:26:57.090  INFO 8001 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-02 15:26:57.093  INFO 8001 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-02 15:26:57.100  INFO 8001 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-02 15:26:57.157  INFO 8001 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2018-11-02 15:26:57.164  INFO 8001 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Started DemoApplication in 2.931 seconds (JVM running for 3.703)
+2018-11-02 15:27:27.042  INFO 8001 --- [Thread-15] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64b7a517: startup date [Fri Nov 02 15:26:54 CST 2018]; root of context hierarchy
+2018-11-02 15:27:27.046  INFO 8001 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-11-02 15:27:27.047  INFO 8001 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-11-02 15:27:29.430  INFO 8011 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Starting DemoApplication on cpe-172-119-50-50.socal.res.rr.com with PID 8011 (/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes started by star in /Users/star/Documents/myworkspace/ideaworkspace/demo)
+2018-11-02 15:27:29.431 DEBUG 8011 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-11-02 15:27:29.433  INFO 8011 --- [restartedMain] com.joruns.test.demo.DemoApplication     : The following profiles are active: local
+2018-11-02 15:27:29.513  INFO 8011 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39eec80f: startup date [Fri Nov 02 15:27:29 CST 2018]; root of context hierarchy
+2018-11-02 15:27:30.947  INFO 8011 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-02 15:27:30.965  INFO 8011 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-02 15:27:30.965  INFO 8011 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-11-02 15:27:30.968  INFO 8011 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/star/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-02 15:27:31.019  INFO 8011 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-02 15:27:31.019  INFO 8011 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1506 ms
+2018-11-02 15:27:31.121  INFO 8011 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-02 15:27:31.125  INFO 8011 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 15:27:31.125  INFO 8011 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 15:27:31.125  INFO 8011 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 15:27:31.126  INFO 8011 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 15:27:31.246 DEBUG 8011 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@eff50c6
+2018-11-02 15:27:31.381  INFO 8011 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : JedisPool注入成功！
+2018-11-02 15:27:31.382  INFO 8011 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : redis地址：172.0.0.1:6379
+2018-11-02 15:27:31.469  INFO 8011 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:27:31.721  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39eec80f: startup date [Fri Nov 02 15:27:29 CST 2018]; root of context hierarchy
+2018-11-02 15:27:31.827  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readis/demo]}" onto public com.joruns.test.demo.beans.Town com.joruns.test.demo.controller.ReadisController.test(com.joruns.test.demo.beans.Town)
+2018-11-02 15:27:31.830  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sel]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.selAll()
+2018-11-02 15:27:31.830  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuser]}" onto public int com.joruns.test.demo.controller.UserController.insertuser() throws java.text.ParseException
+2018-11-02 15:27:31.830  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuserlist]}" onto public void com.joruns.test.demo.controller.UserController.insertuserlist()
+2018-11-02 15:27:31.830  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seleuserlisr]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.seleuserlisr()
+2018-11-02 15:27:31.831  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectdoubletable()
+2018-11-02 15:27:31.831  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectsheng]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectsheng()
+2018-11-02 15:27:31.831  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable1]}" onto public java.util.List<com.joruns.test.demo.beans.City> com.joruns.test.demo.controller.UserController.selectdoubletable1()
+2018-11-02 15:27:31.831  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/shangchuan],methods=[POST]}" onto public void com.joruns.test.demo.controller.UserController.shangchuan(org.springframework.web.multipart.MultipartFile)
+2018-11-02 15:27:31.833  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[GET]}" onto public void com.joruns.test.demo.controller.WXdemo.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:27:31.833  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[POST]}" onto public void com.joruns.test.demo.controller.WXdemo.dopost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:27:31.833  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getwechatconfig],methods=[GET]}" onto public com.joruns.test.demo.beans.WeChatJSConfig com.joruns.test.demo.controller.WechatController.weChatConfig(java.lang.String)
+2018-11-02 15:27:31.835  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-02 15:27:31.835  INFO 8011 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:27:31.861  INFO 8011 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:27:31.861  INFO 8011 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:27:32.091  INFO 8011 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-11-02 15:27:32.128  INFO 8011 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-02 15:27:32.129  INFO 8011 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-02 15:27:32.134  INFO 8011 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-02 15:27:32.193  INFO 8011 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2018-11-02 15:27:32.201  INFO 8011 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Started DemoApplication in 3.249 seconds (JVM running for 4.102)
+2018-11-02 15:27:41.058  INFO 8011 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-02 15:27:41.058  INFO 8011 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-02 15:27:41.074  INFO 8011 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-11-02 15:30:53.807  INFO 8011 --- [Thread-15] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39eec80f: startup date [Fri Nov 02 15:27:29 CST 2018]; root of context hierarchy
+2018-11-02 15:30:53.811  INFO 8011 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-11-02 15:30:53.811  INFO 8011 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-11-02 15:43:57.557  INFO 8118 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Starting DemoApplication on cpe-172-119-50-50.socal.res.rr.com with PID 8118 (/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes started by star in /Users/star/Documents/myworkspace/ideaworkspace/demo)
+2018-11-02 15:43:57.558 DEBUG 8118 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-11-02 15:43:57.560  INFO 8118 --- [restartedMain] com.joruns.test.demo.DemoApplication     : The following profiles are active: local
+2018-11-02 15:43:57.618  INFO 8118 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a4e1ba8: startup date [Fri Nov 02 15:43:57 CST 2018]; root of context hierarchy
+2018-11-02 15:43:58.969  INFO 8118 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-02 15:43:58.987  INFO 8118 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-02 15:43:58.987  INFO 8118 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-11-02 15:43:58.990  INFO 8118 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/star/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-02 15:43:59.040  INFO 8118 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-02 15:43:59.040  INFO 8118 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1422 ms
+2018-11-02 15:43:59.139  INFO 8118 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-02 15:43:59.142  INFO 8118 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 15:43:59.143  INFO 8118 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 15:43:59.143  INFO 8118 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 15:43:59.143  INFO 8118 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 15:43:59.177  INFO 8118 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : JedisPool注入成功！
+2018-11-02 15:43:59.177  INFO 8118 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : redis地址：172.0.0.1:6379
+2018-11-02 15:43:59.279 DEBUG 8118 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@70539b87
+2018-11-02 15:43:59.525  INFO 8118 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:43:59.733  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a4e1ba8: startup date [Fri Nov 02 15:43:57 CST 2018]; root of context hierarchy
+2018-11-02 15:43:59.852  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readis/demo]}" onto public com.joruns.test.demo.beans.Town com.joruns.test.demo.controller.ReadisController.test(com.joruns.test.demo.beans.Town)
+2018-11-02 15:43:59.856  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sel]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.selAll()
+2018-11-02 15:43:59.856  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuser]}" onto public int com.joruns.test.demo.controller.UserController.insertuser() throws java.text.ParseException
+2018-11-02 15:43:59.856  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuserlist]}" onto public void com.joruns.test.demo.controller.UserController.insertuserlist()
+2018-11-02 15:43:59.856  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seleuserlisr]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.seleuserlisr()
+2018-11-02 15:43:59.857  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectdoubletable()
+2018-11-02 15:43:59.857  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectsheng]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectsheng()
+2018-11-02 15:43:59.857  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable1]}" onto public java.util.List<com.joruns.test.demo.beans.City> com.joruns.test.demo.controller.UserController.selectdoubletable1()
+2018-11-02 15:43:59.857  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/shangchuan],methods=[POST]}" onto public void com.joruns.test.demo.controller.UserController.shangchuan(org.springframework.web.multipart.MultipartFile)
+2018-11-02 15:43:59.859  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[POST]}" onto public void com.joruns.test.demo.controller.WXdemo.dopost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:43:59.860  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[GET]}" onto public void com.joruns.test.demo.controller.WXdemo.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:43:59.860  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getwechatconfig],methods=[GET]}" onto public com.joruns.test.demo.beans.WeChatJSConfig com.joruns.test.demo.controller.WechatController.weChatConfig(java.lang.String)
+2018-11-02 15:43:59.862  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-02 15:43:59.863  INFO 8118 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:43:59.918  INFO 8118 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:43:59.918  INFO 8118 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:44:00.182  INFO 8118 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-11-02 15:44:00.204  INFO 8118 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-02 15:44:00.206  INFO 8118 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-02 15:44:00.210  INFO 8118 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-02 15:44:00.257  INFO 8118 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2018-11-02 15:44:00.262  INFO 8118 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Started DemoApplication in 3.116 seconds (JVM running for 3.785)
+2018-11-02 15:44:07.906  INFO 8118 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-02 15:44:07.906  INFO 8118 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-02 15:44:07.923  INFO 8118 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-11-02 15:44:29.160  INFO 8118 --- [Thread-16] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a4e1ba8: startup date [Fri Nov 02 15:43:57 CST 2018]; root of context hierarchy
+2018-11-02 15:44:29.163  INFO 8118 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-11-02 15:44:29.163  INFO 8118 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-11-02 15:44:34.745  INFO 8125 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Starting DemoApplication on cpe-172-119-50-50.socal.res.rr.com with PID 8125 (/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes started by star in /Users/star/Documents/myworkspace/ideaworkspace/demo)
+2018-11-02 15:44:34.747 DEBUG 8125 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-11-02 15:44:34.748  INFO 8125 --- [restartedMain] com.joruns.test.demo.DemoApplication     : The following profiles are active: local
+2018-11-02 15:44:34.815  INFO 8125 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71c24381: startup date [Fri Nov 02 15:44:34 CST 2018]; root of context hierarchy
+2018-11-02 15:44:36.183  INFO 8125 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-02 15:44:36.200  INFO 8125 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-02 15:44:36.201  INFO 8125 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-11-02 15:44:36.203  INFO 8125 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/star/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-02 15:44:36.264  INFO 8125 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-02 15:44:36.264  INFO 8125 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1449 ms
+2018-11-02 15:44:36.360  INFO 8125 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-02 15:44:36.363  INFO 8125 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 15:44:36.363  INFO 8125 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 15:44:36.363  INFO 8125 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 15:44:36.363  INFO 8125 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 15:44:36.397  INFO 8125 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : JedisPool注入成功！
+2018-11-02 15:44:36.397  INFO 8125 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : redis地址：172.0.0.1:6379
+2018-11-02 15:44:36.494 DEBUG 8125 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@63708a88
+2018-11-02 15:44:36.711  INFO 8125 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:44:36.979  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71c24381: startup date [Fri Nov 02 15:44:34 CST 2018]; root of context hierarchy
+2018-11-02 15:44:37.085  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readis/demo]}" onto public com.joruns.test.demo.beans.Town com.joruns.test.demo.controller.ReadisController.test(com.joruns.test.demo.beans.Town)
+2018-11-02 15:44:37.088  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sel]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.selAll()
+2018-11-02 15:44:37.088  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuser]}" onto public int com.joruns.test.demo.controller.UserController.insertuser() throws java.text.ParseException
+2018-11-02 15:44:37.089  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuserlist]}" onto public void com.joruns.test.demo.controller.UserController.insertuserlist()
+2018-11-02 15:44:37.089  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seleuserlisr]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.seleuserlisr()
+2018-11-02 15:44:37.089  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectdoubletable()
+2018-11-02 15:44:37.089  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectsheng]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectsheng()
+2018-11-02 15:44:37.090  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable1]}" onto public java.util.List<com.joruns.test.demo.beans.City> com.joruns.test.demo.controller.UserController.selectdoubletable1()
+2018-11-02 15:44:37.090  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/shangchuan],methods=[POST]}" onto public void com.joruns.test.demo.controller.UserController.shangchuan(org.springframework.web.multipart.MultipartFile)
+2018-11-02 15:44:37.092  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[GET]}" onto public void com.joruns.test.demo.controller.WXdemo.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:44:37.092  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[POST]}" onto public void com.joruns.test.demo.controller.WXdemo.dopost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:44:37.092  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getwechatconfig],methods=[GET]}" onto public com.joruns.test.demo.beans.WeChatJSConfig com.joruns.test.demo.controller.WechatController.weChatConfig(java.lang.String)
+2018-11-02 15:44:37.094  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-02 15:44:37.095  INFO 8125 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:44:37.119  INFO 8125 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:44:37.119  INFO 8125 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:44:37.379  INFO 8125 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-11-02 15:44:37.406  INFO 8125 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-02 15:44:37.407  INFO 8125 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-02 15:44:37.411  INFO 8125 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-02 15:44:37.454  INFO 8125 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2018-11-02 15:44:37.458  INFO 8125 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Started DemoApplication in 3.107 seconds (JVM running for 3.777)
+2018-11-02 15:44:44.107  INFO 8125 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-02 15:44:44.125  INFO 8125 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-02 15:44:44.142  INFO 8125 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-11-02 15:45:05.778  INFO 8125 --- [Thread-16] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71c24381: startup date [Fri Nov 02 15:44:34 CST 2018]; root of context hierarchy
+2018-11-02 15:45:05.782  INFO 8125 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-11-02 15:45:05.782  INFO 8125 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-11-02 15:45:13.538  INFO 8139 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Starting DemoApplication on cpe-172-119-50-50.socal.res.rr.com with PID 8139 (/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes started by star in /Users/star/Documents/myworkspace/ideaworkspace/demo)
+2018-11-02 15:45:13.539 DEBUG 8139 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-11-02 15:45:13.550  INFO 8139 --- [restartedMain] com.joruns.test.demo.DemoApplication     : The following profiles are active: local
+2018-11-02 15:45:13.612  INFO 8139 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@11f4cf0d: startup date [Fri Nov 02 15:45:13 CST 2018]; root of context hierarchy
+2018-11-02 15:45:15.042  INFO 8139 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-02 15:45:15.066  INFO 8139 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-02 15:45:15.067  INFO 8139 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-11-02 15:45:15.070  INFO 8139 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/star/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-02 15:45:15.127  INFO 8139 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-02 15:45:15.127  INFO 8139 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1515 ms
+2018-11-02 15:45:15.240  INFO 8139 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-02 15:45:15.244  INFO 8139 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 15:45:15.244  INFO 8139 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 15:45:15.244  INFO 8139 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 15:45:15.245  INFO 8139 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 15:45:15.346  INFO 8139 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : JedisPool注入成功！
+2018-11-02 15:45:15.346  INFO 8139 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : redis地址：172.0.0.1:6379
+2018-11-02 15:45:15.461 DEBUG 8139 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@19c0f6b5
+2018-11-02 15:45:15.750  INFO 8139 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:45:16.048  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@11f4cf0d: startup date [Fri Nov 02 15:45:13 CST 2018]; root of context hierarchy
+2018-11-02 15:45:16.100  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readis/demo]}" onto public com.joruns.test.demo.beans.Town com.joruns.test.demo.controller.ReadisController.test(com.joruns.test.demo.beans.Town)
+2018-11-02 15:45:16.105  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sel]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.selAll()
+2018-11-02 15:45:16.105  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuser]}" onto public int com.joruns.test.demo.controller.UserController.insertuser() throws java.text.ParseException
+2018-11-02 15:45:16.105  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuserlist]}" onto public void com.joruns.test.demo.controller.UserController.insertuserlist()
+2018-11-02 15:45:16.105  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seleuserlisr]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.seleuserlisr()
+2018-11-02 15:45:16.106  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectdoubletable()
+2018-11-02 15:45:16.106  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectsheng]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectsheng()
+2018-11-02 15:45:16.106  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable1]}" onto public java.util.List<com.joruns.test.demo.beans.City> com.joruns.test.demo.controller.UserController.selectdoubletable1()
+2018-11-02 15:45:16.106  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/shangchuan],methods=[POST]}" onto public void com.joruns.test.demo.controller.UserController.shangchuan(org.springframework.web.multipart.MultipartFile)
+2018-11-02 15:45:16.108  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[POST]}" onto public void com.joruns.test.demo.controller.WXdemo.dopost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:45:16.108  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[GET]}" onto public void com.joruns.test.demo.controller.WXdemo.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:45:16.109  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getwechatconfig],methods=[GET]}" onto public com.joruns.test.demo.beans.WeChatJSConfig com.joruns.test.demo.controller.WechatController.weChatConfig(java.lang.String)
+2018-11-02 15:45:16.111  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-02 15:45:16.111  INFO 8139 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:45:16.142  INFO 8139 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:45:16.142  INFO 8139 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:45:16.408  INFO 8139 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-11-02 15:45:16.442  INFO 8139 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-02 15:45:16.444  INFO 8139 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-02 15:45:16.450  INFO 8139 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-02 15:45:16.499  INFO 8139 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2018-11-02 15:45:16.503  INFO 8139 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Started DemoApplication in 3.407 seconds (JVM running for 4.804)
+2018-11-02 15:45:24.008  INFO 8139 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-02 15:45:24.008  INFO 8139 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-02 15:45:24.025  INFO 8139 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-11-02 15:46:24.000  INFO 8139 --- [Thread-16] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@11f4cf0d: startup date [Fri Nov 02 15:45:13 CST 2018]; root of context hierarchy
+2018-11-02 15:46:24.003  INFO 8139 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-11-02 15:46:24.004  INFO 8139 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-11-02 15:46:34.292  INFO 8149 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Starting DemoApplication on cpe-172-119-50-50.socal.res.rr.com with PID 8149 (/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes started by star in /Users/star/Documents/myworkspace/ideaworkspace/demo)
+2018-11-02 15:46:34.294 DEBUG 8149 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-11-02 15:46:34.295  INFO 8149 --- [restartedMain] com.joruns.test.demo.DemoApplication     : The following profiles are active: local
+2018-11-02 15:46:34.356  INFO 8149 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@142826d2: startup date [Fri Nov 02 15:46:34 CST 2018]; root of context hierarchy
+2018-11-02 15:46:35.722  INFO 8149 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-02 15:46:35.739  INFO 8149 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-02 15:46:35.740  INFO 8149 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-11-02 15:46:35.742  INFO 8149 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/star/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-02 15:46:35.800  INFO 8149 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-02 15:46:35.800  INFO 8149 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1444 ms
+2018-11-02 15:46:35.893  INFO 8149 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-02 15:46:35.895  INFO 8149 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 15:46:35.896  INFO 8149 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 15:46:35.896  INFO 8149 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 15:46:35.896  INFO 8149 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 15:46:35.926  INFO 8149 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : JedisPool注入成功！
+2018-11-02 15:46:35.927  INFO 8149 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : redis地址：172.0.0.1:6379
+2018-11-02 15:46:35.998 DEBUG 8149 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6baa3acd
+2018-11-02 15:46:36.240  INFO 8149 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:46:36.480  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@142826d2: startup date [Fri Nov 02 15:46:34 CST 2018]; root of context hierarchy
+2018-11-02 15:46:36.586  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readis/demo]}" onto public com.joruns.test.demo.beans.Town com.joruns.test.demo.controller.ReadisController.test(com.joruns.test.demo.beans.Town)
+2018-11-02 15:46:36.589  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sel]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.selAll()
+2018-11-02 15:46:36.589  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuser]}" onto public int com.joruns.test.demo.controller.UserController.insertuser() throws java.text.ParseException
+2018-11-02 15:46:36.589  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuserlist]}" onto public void com.joruns.test.demo.controller.UserController.insertuserlist()
+2018-11-02 15:46:36.589  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seleuserlisr]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.seleuserlisr()
+2018-11-02 15:46:36.590  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectdoubletable()
+2018-11-02 15:46:36.590  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectsheng]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectsheng()
+2018-11-02 15:46:36.590  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable1]}" onto public java.util.List<com.joruns.test.demo.beans.City> com.joruns.test.demo.controller.UserController.selectdoubletable1()
+2018-11-02 15:46:36.590  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/shangchuan],methods=[POST]}" onto public void com.joruns.test.demo.controller.UserController.shangchuan(org.springframework.web.multipart.MultipartFile)
+2018-11-02 15:46:36.592  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[GET]}" onto public void com.joruns.test.demo.controller.WXdemo.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:46:36.592  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[POST]}" onto public void com.joruns.test.demo.controller.WXdemo.dopost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:46:36.592  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getwechatconfig],methods=[GET]}" onto public com.joruns.test.demo.beans.WeChatJSConfig com.joruns.test.demo.controller.WechatController.weChatConfig(java.lang.String)
+2018-11-02 15:46:36.594  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-02 15:46:36.595  INFO 8149 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:46:36.618  INFO 8149 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:46:36.618  INFO 8149 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:46:36.922  INFO 8149 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-11-02 15:46:36.953  INFO 8149 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-02 15:46:36.954  INFO 8149 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-02 15:46:36.960  INFO 8149 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-02 15:46:37.007  INFO 8149 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2018-11-02 15:46:37.012  INFO 8149 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Started DemoApplication in 3.051 seconds (JVM running for 3.788)
+2018-11-02 15:46:42.779  INFO 8149 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-02 15:46:42.779  INFO 8149 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-02 15:46:42.795  INFO 8149 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-11-02 15:46:42.834 ERROR 8149 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.joruns.test.demo.util.JedisUtil.set(JedisUtil.java:105) ~[classes/:na]
+	at com.joruns.test.demo.controller.ReadisController.test(ReadisController.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+
+2018-11-02 15:53:43.262  INFO 8149 --- [Thread-16] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@142826d2: startup date [Fri Nov 02 15:46:34 CST 2018]; root of context hierarchy
+2018-11-02 15:53:43.266  INFO 8149 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-11-02 15:53:43.267  INFO 8149 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-11-02 15:53:47.031  INFO 8162 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Starting DemoApplication on cpe-172-119-50-50.socal.res.rr.com with PID 8162 (/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes started by star in /Users/star/Documents/myworkspace/ideaworkspace/demo)
+2018-11-02 15:53:47.033 DEBUG 8162 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-11-02 15:53:47.034  INFO 8162 --- [restartedMain] com.joruns.test.demo.DemoApplication     : The following profiles are active: local
+2018-11-02 15:53:47.107  INFO 8162 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4caa1a7b: startup date [Fri Nov 02 15:53:47 CST 2018]; root of context hierarchy
+2018-11-02 15:53:48.680  INFO 8162 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-02 15:53:48.709  INFO 8162 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-02 15:53:48.710  INFO 8162 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-11-02 15:53:48.715  INFO 8162 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/star/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-02 15:53:48.775  INFO 8162 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-02 15:53:48.776  INFO 8162 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1669 ms
+2018-11-02 15:53:48.898  INFO 8162 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-02 15:53:48.902  INFO 8162 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 15:53:48.902  INFO 8162 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 15:53:48.903  INFO 8162 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 15:53:48.903  INFO 8162 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 15:53:48.962  INFO 8162 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : JedisPool注入成功！
+2018-11-02 15:53:48.963  INFO 8162 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : redis地址：172.0.0.1:6379
+2018-11-02 15:53:49.057 DEBUG 8162 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@43a624f1
+2018-11-02 15:53:49.300  INFO 8162 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:53:49.571  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4caa1a7b: startup date [Fri Nov 02 15:53:47 CST 2018]; root of context hierarchy
+2018-11-02 15:53:49.632  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readis/demo]}" onto public com.joruns.test.demo.beans.Town com.joruns.test.demo.controller.ReadisController.test(com.joruns.test.demo.beans.Town)
+2018-11-02 15:53:49.637  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sel]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.selAll()
+2018-11-02 15:53:49.637  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuser]}" onto public int com.joruns.test.demo.controller.UserController.insertuser() throws java.text.ParseException
+2018-11-02 15:53:49.637  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuserlist]}" onto public void com.joruns.test.demo.controller.UserController.insertuserlist()
+2018-11-02 15:53:49.638  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seleuserlisr]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.seleuserlisr()
+2018-11-02 15:53:49.638  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectdoubletable()
+2018-11-02 15:53:49.638  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectsheng]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectsheng()
+2018-11-02 15:53:49.638  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable1]}" onto public java.util.List<com.joruns.test.demo.beans.City> com.joruns.test.demo.controller.UserController.selectdoubletable1()
+2018-11-02 15:53:49.639  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/shangchuan],methods=[POST]}" onto public void com.joruns.test.demo.controller.UserController.shangchuan(org.springframework.web.multipart.MultipartFile)
+2018-11-02 15:53:49.641  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[GET]}" onto public void com.joruns.test.demo.controller.WXdemo.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:53:49.641  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[POST]}" onto public void com.joruns.test.demo.controller.WXdemo.dopost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:53:49.641  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getwechatconfig],methods=[GET]}" onto public com.joruns.test.demo.beans.WeChatJSConfig com.joruns.test.demo.controller.WechatController.weChatConfig(java.lang.String)
+2018-11-02 15:53:49.644  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-02 15:53:49.644  INFO 8162 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 15:53:49.679  INFO 8162 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:53:49.679  INFO 8162 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 15:53:50.015  INFO 8162 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-11-02 15:53:50.043  INFO 8162 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-02 15:53:50.044  INFO 8162 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-02 15:53:50.049  INFO 8162 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-02 15:53:50.100  INFO 8162 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2018-11-02 15:53:50.105  INFO 8162 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Started DemoApplication in 3.593 seconds (JVM running for 4.85)
+2018-11-02 15:53:59.991  INFO 8162 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-02 15:53:59.991  INFO 8162 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-02 15:54:00.009  INFO 8162 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-11-02 16:10:11.881 ERROR 8162 --- [http-nio-8090-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.joruns.test.demo.util.JedisUtil.set(JedisUtil.java:105) ~[classes/:na]
+	at com.joruns.test.demo.controller.ReadisController.test(ReadisController.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+
+2018-11-02 16:10:11.922  INFO 8162 --- [Thread-17] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4caa1a7b: startup date [Fri Nov 02 15:53:47 CST 2018]; root of context hierarchy
+2018-11-02 16:10:11.928  INFO 8162 --- [Thread-17] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-11-02 16:10:11.930  INFO 8162 --- [Thread-17] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-11-02 16:14:08.004  INFO 8222 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Starting DemoApplication on cpe-172-119-50-50.socal.res.rr.com with PID 8222 (/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes started by star in /Users/star/Documents/myworkspace/ideaworkspace/demo)
+2018-11-02 16:14:08.005 DEBUG 8222 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-11-02 16:14:08.006  INFO 8222 --- [restartedMain] com.joruns.test.demo.DemoApplication     : The following profiles are active: local
+2018-11-02 16:14:08.079  INFO 8222 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@142826d2: startup date [Fri Nov 02 16:14:08 CST 2018]; root of context hierarchy
+2018-11-02 16:14:09.386  INFO 8222 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2018-11-02 16:14:09.403  INFO 8222 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-02 16:14:09.404  INFO 8222 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-11-02 16:14:09.406  INFO 8222 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/star/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-02 16:14:09.467  INFO 8222 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-02 16:14:09.467  INFO 8222 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1388 ms
+2018-11-02 16:14:09.563  INFO 8222 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-02 16:14:09.567  INFO 8222 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 16:14:09.567  INFO 8222 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 16:14:09.568  INFO 8222 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 16:14:09.568  INFO 8222 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 16:14:09.603  INFO 8222 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : JedisPool注入成功！
+2018-11-02 16:14:09.604  INFO 8222 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : redis地址：172.0.0.1:6379
+2018-11-02 16:14:09.682 DEBUG 8222 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6baa3acd
+2018-11-02 16:14:09.918  INFO 8222 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 16:14:10.144  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@142826d2: startup date [Fri Nov 02 16:14:08 CST 2018]; root of context hierarchy
+2018-11-02 16:14:10.265  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readis/demo]}" onto public com.joruns.test.demo.beans.Town com.joruns.test.demo.controller.ReadisController.test(com.joruns.test.demo.beans.Town)
+2018-11-02 16:14:10.268  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sel]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.selAll()
+2018-11-02 16:14:10.269  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuser]}" onto public int com.joruns.test.demo.controller.UserController.insertuser() throws java.text.ParseException
+2018-11-02 16:14:10.269  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/insertuserlist]}" onto public void com.joruns.test.demo.controller.UserController.insertuserlist()
+2018-11-02 16:14:10.269  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/seleuserlisr]}" onto public java.util.List<com.joruns.test.demo.beans.User> com.joruns.test.demo.controller.UserController.seleuserlisr()
+2018-11-02 16:14:10.269  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectdoubletable()
+2018-11-02 16:14:10.270  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectsheng]}" onto public java.util.List<com.joruns.test.demo.beans.Province> com.joruns.test.demo.controller.UserController.selectsheng()
+2018-11-02 16:14:10.270  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/selectdoubletable1]}" onto public java.util.List<com.joruns.test.demo.beans.City> com.joruns.test.demo.controller.UserController.selectdoubletable1()
+2018-11-02 16:14:10.270  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/shangchuan],methods=[POST]}" onto public void com.joruns.test.demo.controller.UserController.shangchuan(org.springframework.web.multipart.MultipartFile)
+2018-11-02 16:14:10.272  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[GET]}" onto public void com.joruns.test.demo.controller.WXdemo.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 16:14:10.272  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/weixin/demo],methods=[POST]}" onto public void com.joruns.test.demo.controller.WXdemo.dopost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 16:14:10.272  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getwechatconfig],methods=[GET]}" onto public com.joruns.test.demo.beans.WeChatJSConfig com.joruns.test.demo.controller.WechatController.weChatConfig(java.lang.String)
+2018-11-02 16:14:10.274  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-02 16:14:10.275  INFO 8222 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-02 16:14:10.301  INFO 8222 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 16:14:10.301  INFO 8222 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-02 16:14:10.559  INFO 8222 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-11-02 16:14:10.591  INFO 8222 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-02 16:14:10.592  INFO 8222 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-02 16:14:10.596  INFO 8222 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-02 16:14:10.643  INFO 8222 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2018-11-02 16:14:10.647  INFO 8222 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Started DemoApplication in 3.001 seconds (JVM running for 3.598)
+2018-11-02 16:14:21.086  INFO 8222 --- [Thread-16] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@142826d2: startup date [Fri Nov 02 16:14:08 CST 2018]; root of context hierarchy
+2018-11-02 16:14:21.089  INFO 8222 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-11-02 16:14:21.089  INFO 8222 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-11-02 16:16:35.407  INFO 8253 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Starting DemoApplication on cpe-172-119-50-50.socal.res.rr.com with PID 8253 (/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes started by star in /Users/star/Documents/myworkspace/ideaworkspace/demo)
+2018-11-02 16:16:35.407 DEBUG 8253 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-11-02 16:16:35.408  INFO 8253 --- [restartedMain] com.joruns.test.demo.DemoApplication     : The following profiles are active: local
+2018-11-02 16:16:35.468  INFO 8253 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f6b2134: startup date [Fri Nov 02 16:16:35 CST 2018]; root of context hierarchy
+2018-11-02 16:16:36.796  INFO 8253 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2018-11-02 16:16:36.813  INFO 8253 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-02 16:16:36.813  INFO 8253 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-11-02 16:16:36.816  INFO 8253 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/star/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-02 16:16:36.871  INFO 8253 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-02 16:16:36.871  INFO 8253 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1403 ms
+2018-11-02 16:16:36.983  INFO 8253 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-02 16:16:36.986  INFO 8253 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-02 16:16:36.987  INFO 8253 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-02 16:16:36.987  INFO 8253 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-02 16:16:36.987  INFO 8253 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-02 16:16:37.021  INFO 8253 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : JedisPool注入成功！
+2018-11-02 16:16:37.022  INFO 8253 --- [restartedMain] com.joruns.test.demo.config.JedisConfig  : redis地址：172.0.0.1:6379
+2018-11-02 16:16:37.089  WARN 8253 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serviceimp': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao' defined in file [/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes/com/joruns/test/demo/dao/UserDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2018-11-02 16:16:37.093  INFO 8253 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-11-02 16:16:37.110  INFO 8253 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-02 16:16:37.120 ERROR 8253 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to auto-configure a DataSource: 'spring.datasource.url' is not specified and no embedded datasource could be auto-configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2018-11-02 16:19:29.747  INFO 8286 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Starting DemoApplication on cpe-172-119-50-50.socal.res.rr.com with PID 8286 (/Users/star/Documents/myworkspace/ideaworkspace/demo/target/classes started by star in /Users/star/Documents/myworkspace/ideaworkspace/demo)
+2018-11-02 16:19:29.748 DEBUG 8286 --- [restartedMain] com.joruns.test.demo.DemoApplication     : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-11-02 16:19:29.750  INFO 8286 --- [restartedMain] com.joruns.test.demo.DemoApplication     : The following profiles are active: local
+2018-11-02 16:19:29.819  INFO 8286 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ab8269b: startup date [Fri Nov 02 16:19:29 CST 2018]; root of context hierarchy
+2018-11-02 16:19:30.921  WARN 8286 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jedisConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.host' in value "${spring.redis.host}"
+2018-11-02 16:19:30.929  INFO 8286 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-02 16:19:30.940 ERROR 8286 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jedisConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.host' in value "${spring.redis.host}"
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.joruns.test.demo.DemoApplication.main(DemoApplication.java:17) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jedisConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.host' in value "${spring.redis.host}"
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:587) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:214) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:178) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jedisConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.host' in value "${spring.redis.host}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:667) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:94) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:352) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:304) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:437) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jedisConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.host' in value "${spring.redis.host}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:379) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1325) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1291) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1193) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1096) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 57 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.redis.host' in value "${spring.redis.host}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 71 common frames omitted
+
